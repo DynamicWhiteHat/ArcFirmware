@@ -12,6 +12,9 @@ config BT_CTLR
 config I2C
 	default y
 
+config SPI
+    default y
+
 config ZMK_MAX17048
     default y
 

@@ -19,3 +19,4 @@
 ---
  include:
    - board: arc
+   - shield: nice_view
