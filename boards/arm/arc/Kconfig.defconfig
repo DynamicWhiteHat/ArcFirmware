@@ -7,7 +7,7 @@ config BOARD
     default "arc"
 
 config BT_CTLR
-    default BT'
+    default BT
 
 config ZMK_MAX17048
     default y
