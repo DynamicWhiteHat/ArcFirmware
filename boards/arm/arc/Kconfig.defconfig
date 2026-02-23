@@ -9,6 +9,9 @@ config BOARD
 config BT_CTLR
     default BT
 
+config I2C
+	default y
+
 config ZMK_MAX17048
     default y
 

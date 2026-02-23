@@ -136,7 +136,6 @@ zephyr_udc0: &usbd {
 
 	builtin_fuel_gauge: max17048@36 {
 		compatible = "zmk,maxim-max17048";
-		label = "BATTERY";
 		reg = <0x36>;
 	};
 };
