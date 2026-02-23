@@ -5,15 +5,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include "arc-pinctrl.dtsi"
 
-
-nice_view_spi: &spi0 {
-    compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
-    pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 27 GPIO_ACTIVE_HIGH>;
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -50,7 +41,7 @@ nice_view_spi: &spi0 {
         &bt BT_CLR &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &kp C_BRI_DN &kp C_BRI_UP &trans &trans &trans &trans &kp C_AL_TASK_MANAGER &kp C_AL_CALC &trans &trans
         &bt BT_SEL 0 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &rgb_ug RGB_EFF 
         &bt BT_SEL 1 &trans &trans &trans &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI &trans &trans &trans &trans &trans &trans &rgb_ug RGB_EFR
-        &bt BT_SEL 2 &trans &trans &rgb_ug RGB_HUD &rgb_ug SGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &trans &trans &trans &trans &trans &trans &trans 
+        &bt BT_SEL 2 &trans &trans &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &trans &trans &trans &trans &trans &trans &trans 
         &bt BT_SEL 3 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
         &bt BT_SEL 4 &ext_power EP_TOG &trans &rgb_ug RGB_TOG &trans &trans &trans &trans &trans &trans
         >;
