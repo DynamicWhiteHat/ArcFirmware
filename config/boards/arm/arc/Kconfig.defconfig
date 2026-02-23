@@ -1,3 +1,5 @@
+if BOARD_ARC
+
 config ZMK_KEYBOARD_NAME
     default "Arc"
 
@@ -19,3 +21,4 @@ config USB_DEVICE_STACK
     default y
 
 endif # USB
+endif # BOARD_ARC
