@@ -22,3 +22,4 @@
      shield: nice_view_gem
      cmake-args:
       - CONFIG_BUILD_OUTPUT_UF2=n
+      - CONFIG_BUILD_OUTPUT_HEX=y
