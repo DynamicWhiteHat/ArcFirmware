@@ -21,5 +21,4 @@
    - board: arc
      shield: nice_view_gem
      cmake-args:
-      - -DCONFIG_BUILD_OUTPUT_UF2=y
-      - -DCONFIG_BUILD_OUTPUT_HEX=y
+      - CONFIG_BUILD_OUTPUT_UF2=n
