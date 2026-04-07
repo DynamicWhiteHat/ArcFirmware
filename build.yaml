@@ -19,4 +19,4 @@
 ---
  include:
    - board: arc
-     shield: nice-view-gem-rotated
+     shield: nice_view_gem
