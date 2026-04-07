@@ -19,4 +19,6 @@
 ---
  include:
    - board: arc
+     snippet: studio-rpc-usb-uart
+     cmake-args: -DCONFIG_ZMK_STUDIO=y
      shield: nice_view_gem
