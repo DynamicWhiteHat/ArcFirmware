@@ -53,6 +53,5 @@ nice_view_spi: &spi1 {
     pinctrl-1 = <&spi1_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 27 GPIO_ACTIVE_HIGH>;
-    rotation = <180>;
 };
 
