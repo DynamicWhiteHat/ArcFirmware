@@ -6,6 +6,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 #include "arc-pinctrl.dtsi"
+#include "arc-layouts.dtsi"
 
 / {
     model = "arc";
@@ -18,7 +19,8 @@
         zmk,battery = &builtin_fuel_gauge;
         zmk,kscan = &kscan0;
         zmk,underglow = &led_strip;
-        zmk,matrix_transform = &default_transform;
+        //zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = &physical_layout0;
     };
 
      default_transform: keymap_transform_0 {
