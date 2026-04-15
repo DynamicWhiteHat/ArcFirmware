@@ -73,6 +73,8 @@ RC(5,0) RC(5,1) RC(5,2)                 RC(5,5)                         RC(5,9) 
         control-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
     };
 
+    
+
 };
 
 &adc {
